@@ -22,3 +22,11 @@ function showPasswords() {
     password1El.textContent = createPassword()
     password2El.textContent = createPassword()
 }
+
+function copyPassword1() {
+    navigator.clipboard.writeText(password1El.textContent)
+}
+
+function copyPassword2() {
+    navigator.clipboard.writeText(password2El.textContent)
+}
